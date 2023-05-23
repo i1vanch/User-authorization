@@ -1,0 +1,168 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color:#fff;
+}
+
+.app{
+    background-image: url('./img/back.jpeg');
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    box-sizing: border-box;
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    background-position: center; 
+}
+
+.form{
+    width: 400px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 150px;
+    gap: 30px;
+
+}
+
+.title{
+    margin-top: 100px;
+}
+
+
+.input {
+    width: 300px;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(56, 102, 165);
+    outline: none;
+    padding-left: 15px;
+    padding-right: 15px;
+    color: #fff;
+}
+
+.input::placeholder {
+    color: rgb(136, 224, 246);
+}
+
+.auth_button{
+    width: 150px;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(0, 153, 255);
+    color:#fff;
+}
+
+.auth_button:hover{
+    background-color: rgb(0, 122, 204);
+}
+
+.auth_button:active{
+    background-color: rgb(0, 181, 213);
+}
+
+.avatar{
+    width: 100px;
+    height: 100px;
+}
+
+.box_user{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logout_btn{
+    width: 150px;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(0 0 0);;
+    color:#fff;
+}
+
+.logout_btn:hover{
+    background-color: rgb(35, 66, 87);
+}
+
+.logout_btn:active{
+    background-color: rgb(12, 38, 43);
+}
+
+.popup{
+    position: fixed;
+    top: -100px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200px;
+    padding: 20px;
+    background-color: #366fd1;
+    border: 1px solid #366fd1;
+    border-radius: 4px;
+    text-align: center;
+    animation: slideDown 0.5s forwards;
+    color: #fff;
+    margin-top: 50px;
+}
+
+@keyframes slideDown {
+0% {
+    top: -100px;
+    opacity: 0;
+}
+100% {
+    top: 0;
+    opacity: 1;
+}
+}
+
+.close-btn {
+position: absolute;
+top: 5px;
+right: 10px;
+cursor: pointer;
+}
+
+p {
+margin: 0;
+}
+
+.hide {
+display: none;
+}
+
+@media (max-width: 768px) and (min-width:569px){
+    .form{
+        margin-left: 50px;
+    }
+}
+
+@media (max-width: 568px) and (min-width:468px){
+    .form{
+        margin-left: 10px;
+    }
+}
+
+@media (max-width:467px){
+
+    .app{
+        align-items: center;
+    }
+    
+    .form{
+        width: 250px;
+        margin-left: 0;
+    }
+    .input{
+        width: 200px;
+    }
+}
+  
+
+
